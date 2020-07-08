@@ -30,3 +30,6 @@ def test_ReturnSpecificPersonHello3():
 )
 def test_ReturnSpecificPersonHelloParametrizes(input, expected_output):
     assert g.ReturnSpecificPersonHello(input) == expected_output
+
+def test_PrintSpecificPersonHello():
+    g.PrintSpecificPersonHello()
