@@ -1,15 +1,13 @@
-def PrintHello():
-    print(PrintHello())
+class Greeter:
+    def PrintHello(self):
+        print(self.PrintHello())
 
+    def PrintSpecificPersonHello(self):
+        name = input('What is Your name?')
+        print(self.ReturnSpecificPersonHello(name))
 
-def PrintSpecificPersonHello():
-    name = input('What is Your name?')
-    print(ReturnSpecificPersonHello(name))
+    def ReturnHello(self):
+        return 'Hello my Frined'
 
-
-def ReturnHello():
-    return 'Hello my Frined'
-
-
-def ReturnSpecificPersonHello(name):
-    return 'Hello ' + name
+    def ReturnSpecificPersonHello(self, name):
+        return 'Hello ' + name
