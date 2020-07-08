@@ -1,6 +1,6 @@
 class Greeter:
     def PrintHello(self):
-        print(self.PrintHello())
+        print(self.ReturnHello())
 
     def PrintSpecificPersonHello(self):
         name = input('What is Your name?')

@@ -31,5 +31,7 @@ def test_ReturnSpecificPersonHello3():
 def test_ReturnSpecificPersonHelloParametrizes(input, expected_output):
     assert g.ReturnSpecificPersonHello(input) == expected_output
 
-def test_PrintSpecificPersonHello():
-    g.PrintSpecificPersonHello()
+def test_PrintSpecificPersonHello(capsys):
+    g.PrintHello()
+    captured = capsys.readouterr()
+    assert captured.out == 'Hello my Frined\n'
