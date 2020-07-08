@@ -1,5 +1,6 @@
 from Greeter import Greeter
 import pytest
+import sys
 g = Greeter()
 
 
@@ -33,5 +34,7 @@ def test_ReturnSpecificPersonHelloParametrizes(input, expected_output):
 
 def test_PrintSpecificPersonHello(capsys):
     g.PrintHello()
+    sys.stderr.write("err456\n")
     captured = capsys.readouterr()
     assert captured.out == 'Hello my Frined\n'
+    assert captured.err == 'err456\n'
