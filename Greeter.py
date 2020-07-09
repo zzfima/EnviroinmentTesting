@@ -3,7 +3,7 @@ class Greeter:
         print(self.ReturnHello())
 
     def PrintSpecificPersonHello(self):
-        name = input('What is Your name?')
+        name = input()
         print(self.ReturnSpecificPersonHello(name))
 
     def ReturnHello(self):
